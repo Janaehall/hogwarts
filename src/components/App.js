@@ -4,10 +4,12 @@ import Nav from './Nav'
 import hogs from '../porkers_data';
 import HogContainer from './HogContainer'
 import HiddenHogContainer from './HiddenHogContainer'
+import uuid from 'uuid'
 
 class App extends Component {
   constructor() {
     hogs.forEach(hog => hog.hidden = false)
+    hogs.forEach(hog => hog.id = uuid.v4())
     super()
     this.state = {
       hogs: hogs,

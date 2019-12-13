@@ -6,7 +6,7 @@ export default class HiddenHogContainer extends Component {
   createHogs = () => {
     let filteredHogs = this.props.hogs.filter(hog => hog.hidden)
     return filteredHogs.map(hogObj => {
-      return  <HiddenHog unHideHog={this.props.unHideHog} hog={hogObj} />
+      return  <HiddenHog unHideHog={this.props.unHideHog} hog={hogObj} key={hogObj.id}/>
     })
   }
 
