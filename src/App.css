@@ -8,6 +8,11 @@
   display: inline;
 }
 
+.pigImg {
+  height: 250px;
+  width: 250px;
+}
+
 .hogInfo {
   height: 75px;
   overflow:auto;
